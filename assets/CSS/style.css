@@ -1,17 +1,28 @@
+:root {
+
+    --grey: rgb(150, 151, 153);
+    --green: rgb(2, 52, 9);
+    --black: black;
+}
+
+
+head {
+    
+}
 
 body {
-    background-color: lightblue;
+    background-color: var(--green);
     text-align: center;
 }
 
 #scores {
     font-size: 32px;
-    color: rgb(229, 229, 243);
+    color: var(--grey);
     position: fixed;
     bottom: 0;
     right: 0;
     width: 300px;
-    border: 3px solid #73AD21;
+    border: 3px solid var(black);
 }
 
 #timer {
@@ -22,6 +33,7 @@ body {
 
 }
 
-#card {
+#quiz-container {
+    display: none;
 
 }
