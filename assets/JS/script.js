@@ -1,3 +1,83 @@
+//var list
+
+var start= document.querySelector("start");
+
+
+
+
+
+//create questions list
+var myQuestions = [
+    {
+        question: "What is Brian Dawkins' number?",
+        choices: [
+            { 
+                choice1:"7", 
+                choice2:"20",
+                choice3:"24",
+                correct: "20", //or false
+
+            }
+        ]
+    
+    },
+    
+    {
+        question: "What is Brian Dawkins' number?",
+        choices: [
+            { 
+                choice1:"7", 
+                choice2:"20",
+                choice3:"24",
+                correct: "20", //or false
+
+            }
+        ]
+    
+    },
+    {
+        question: "What is Brian Dawkins' number?",
+        choices: [
+            { 
+                choice1:"7", 
+                choice2:"20",
+                choice3:"24",
+                correct: "20", //or false
+
+            }
+        ]
+    
+    },
+    {
+        question: "What is Brian Dawkins' number?",
+        choices: [
+            { 
+                choice1:"7", 
+                choice2:"20",
+                choice3:"24",
+                correct: "20", //or false
+
+            }
+        ]
+    
+    }
+];
+
+// create function to show questions
+function displayQuestions(){
+    document.getElementById("start").style.display = "none;"
+    document.getElementById("quiz-container").style.display = "block";
+    }
+
+//create start game expression that intiates timer and question functions
+var startGame = function (){ displayQuestions, startTimer
+}
+
+//Create event listener to activate start game expression
+document.getElementById(start).addEventListener("click", startGame);
+    console.log(addEventListener)
+    
+
 //create function for a timer
 function startTimer(duration, display){
     var timer = duration, minutes, seconds;
@@ -21,77 +101,7 @@ window.onload = function(){
         display = document.querySelector('#time');
     startTimer(fiveMinutes, display);
 };
-//create function for questions
-var myQuestions = [
-	{
-		question: "What is Brian Dawkins' number?",
-		choices: [
-            { 
-                choice1:"7", 
-                choice2:"20",
-                choice3:"24",
-                correct: "20", //or false
 
-            }
-        ]
-	
-	},
-	
-    {
-		question: "What is Brian Dawkins' number?",
-		choices: [
-            { 
-                choice1:"7", 
-                choice2:"20",
-                choice3:"24",
-                correct: "20", //or false
-
-            }
-        ]
-	
-	},
-    {
-		question: "What is Brian Dawkins' number?",
-		choices: [
-            { 
-                choice1:"7", 
-                choice2:"20",
-                choice3:"24",
-                correct: "20", //or false
-
-            }
-        ]
-	
-	},
-    {
-		question: "What is Brian Dawkins' number?",
-		choices: [
-            { 
-                choice1:"7", 
-                choice2:"20",
-                choice3:"24",
-                correct: "20", //or false
-
-            }
-        ]
-	
-	}
-];
-
-// create function to show questions
-function displayQuestions(){
-    document.getElementById("start").style
-    document.getElementById("quiz-container").style.display = "block";
-    }
-
-//create start game function that intiates timer and question functions
-var startGame = function (){ displayQuestions, startTimer
-}
-
-document.getElementById(start).addEventListener("click", startGame);
-    console.log(addEventListener)
-    // button.addEventListener("click", displayQuestions);
-    // button.addEventListener("click", startTimer);
 
     
 //create document highscore function

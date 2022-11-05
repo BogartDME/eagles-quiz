@@ -26,10 +26,11 @@ body {
 }
 
 #timer {
-
+    display: block;
 }
 
 #start {
+    
 
 }
 
