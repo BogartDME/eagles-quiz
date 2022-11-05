@@ -23,36 +23,38 @@ var myQuestions = [
     },
     
     {
-        question: "What is Brian Dawkins' number?",
+        question: "What was Brian Dawkins' number?",
         choices: [
             { 
-                choice1:"7", 
+                choice1:"33", 
                 choice2:"20",
                 choice3:"24",
-                correct: "20", //or false
+                choice4:"32",
+                correct: "20" //or false
 
             }
         ]
     
     },
     {
-        question: "What is Brian Dawkins' number?",
+        question: "How many Super Bowl appearances have the Eagles had?",
         choices: [
             { 
-                choice1:"7", 
-                choice2:"20",
-                choice3:"24",
-                correct: "20", //or false
+                choice1:"3", 
+                choice2:"2",
+                choice3:"7",
+                choice:"5",
+                correct: "3", //or false
 
             }
         ]
     
     },
     {
-        question: "What is Brian Dawkins' number?",
+        question: "Which comicbook characters have been tied to the Eagles in the last ?",
         choices: [
             { 
-                choice1:"7", 
+                choice1:"", 
                 choice2:"20",
                 choice3:"24",
                 correct: "20", //or false
@@ -71,11 +73,12 @@ function displayQuestions(){
 
 //create start game expression that intiates timer and question functions
 var startGame = function (){ displayQuestions, startTimer
+    console.log("game has started")
 }
 
 //Create event listener to activate start game expression
-document.getElementById(start).addEventListener("click", startGame);
-    console.log(addEventListener)
+document.getElementById("start").addEventListener("click", startGame);
+    console.log("start")
     
 
 //create function for a timer
