@@ -1,11 +1,3 @@
-//var list
-
-var start= document.querySelector("start");
-
-
-
-
-
 //create questions list
 var myQuestions = [
     {
@@ -44,20 +36,21 @@ var myQuestions = [
                 choice2:"2",
                 choice3:"7",
                 choice:"5",
-                correct: "3", //or false
+                correct: "3" //or false
 
             }
         ]
     
     },
     {
-        question: "Which comicbook characters have been tied to the Eagles in the last ?",
+        question: "Which comic book characters have been tied to the Eagles in the last 15 years?",
         choices: [
             { 
-                choice1:"", 
-                choice2:"20",
-                choice3:"24",
-                correct: "20", //or false
+                choice1:"Batman", 
+                choice2:"Punisher",
+                choice3:"Wolverine",
+                choice4: "Batman and Wolverine",
+                correct: "Batman and Wolverine" //or false
 
             }
         ]
@@ -65,21 +58,31 @@ var myQuestions = [
     }
 ];
 
+//global var list
+var card = document.querySelector(".card");
+var eaglesHeader = document.querySelector(".eagles-header");
+var scores = document.querySelector(".scores"); 
+var timer = document.querySelector(".timer"); 
+
+
+
+
+
 // create function to show questions
-function displayQuestions(){
+var displayQuestions = function(){
     document.getElementById("start").style.display = "none;"
     document.getElementById("quiz-container").style.display = "block";
     }
 
-//create start game expression that intiates timer and question functions
-var startGame = function (){ displayQuestions, startTimer
-    console.log("game has started")
-}
-
-//Create event listener to activate start game expression
-document.getElementById("start").addEventListener("click", startGame);
+    
+    //Create event listener to activate start game expression
+    document.getElementById("start").addEventListener("click", startGame);
     console.log("start")
     
+    //create start game expression that intiates timer and question functions
+    var startGame = function (){ displayQuestions, startTimer
+        console.log("game has started")
+    }
 
 //create function for a timer
 function startTimer(duration, display){

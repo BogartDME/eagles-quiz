@@ -15,7 +15,7 @@ body {
     text-align: center;
 }
 
-#scores {
+.scores {
     font-size: 32px;
     color: var(--grey);
     position: fixed;
@@ -25,16 +25,24 @@ body {
     border: 3px solid var(black);
 }
 
-#timer {
+.timer {
     display: block;
 }
 
-#start {
-    
+.start {
+  display: block;  
 
 }
 
 #quiz-container {
     display: none;
+
+}
+
+.time {
+
+}
+
+.card {
 
 }
