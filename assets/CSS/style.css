@@ -21,6 +21,13 @@ body {
     font-size: 50px;
 }
 
+.cox-crawling{
+    
+}
+.instructions{
+    font-size: 40px;
+}
+
 .scores {
     font-size: 32px;
     color: var(--grey);
