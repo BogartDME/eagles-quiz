@@ -14,6 +14,11 @@ body {
     background-color: var(--grey);
     text-align: center;
     font-family: 'Bungee Shade', cursive;
+    color: var(--green);
+}
+
+.eagles-header{
+    font-size: 50px;
 }
 
 .scores {
@@ -32,24 +37,37 @@ body {
 
 }
 
+.instructions{
+    font-size: 30px;
+}
+
+
 .start {
     display: block;  
     height: 200px;
     width: 200px;
     background-color: var(--black);
     color: azure;
-
+    
 }
 
 #quiz-container {
     display: none;
+    
+}
 
+.hs-card{
+    font-size: 30px;
 }
 
 .all-done{
     margin-bottom: 200px;
+    font-size: 35px;
 }
 
+.g-over {
+    font-size: 70px;
+}
 
 .card {
 
