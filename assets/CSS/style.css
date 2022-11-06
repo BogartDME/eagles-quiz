@@ -6,13 +6,14 @@
 }
 
 
-head {
-    
+.head {
+   
 }
 
 body {
-    background-color: var(--green);
+    background-color: var(--grey);
     text-align: center;
+    font-family: 'Bungee Shade', cursive;
 }
 
 .scores {
@@ -25,12 +26,18 @@ body {
     border: 3px solid var(black);
 }
 
-.timer {
+#clock {
     display: block;
+    font-size: 30px;
+
 }
 
 .start {
-  display: block;  
+    display: block;  
+    height: 200px;
+    width: 200px;
+    background-color: var(--black);
+    color: azure;
 
 }
 
@@ -39,10 +46,23 @@ body {
 
 }
 
-.time {
-
+.all-done{
+    margin-bottom: 200px;
 }
+
 
 .card {
 
+}
+
+.footer{
+    flex-wrap: wrap;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 25px solid var(--green);
+    font-size: 28px;
+    justify-content:fle;
+    height: 200px;
+    width: 96%;
+    justify-content: bottom;
 }

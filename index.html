@@ -1,28 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head class=" head">
-    <link rel="stylesheet" href="./assets/CSS/style.css" />
+<head class="head">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    
     <title>Eagles Quiz</title>
 </head>
-    <h1 class="= eagles-header">How well do you know the Philadelphia Eagles? <br>Let's find out!!</h1>
+<body>
+    <!-- This is my timer -->
+    <header>
+        <p id="clock">time: 60s</p>
+    </header>
 
-    <link class="scores">highscores<link>
+    <!-- This is the introduction -->
+    <section>
+        <h1 class="= eagles-header">How well do you know the Philadelphia Eagles? <br>Let's find out!!</h1>
+        <p>Instructions later</p>
+        <button id="start">Start Quiz</button>
+    </section>
 
-    <div class="timer"></div>
-
-    <button id="start">Start Quiz </button>
-
-    <div>Time remaining <span class="time">05:00</span> Hurry up!</div>
-    
+    <!-- This houses my questions -->
     <section id="quiz-container">
+        <h1 id="question"></h1>
+        <div id="choices"></div>
+    </section>
+
+    <!-- This is the link for highscores -->
+    <div id=highscores class="hs-card">
+            <h2>Highscores</h2>
+            <ol id="hs-list">
+            </ol>
+            <div class="hs-buttons">
+                <button id="start-over-btn" class="button">Start Over</button>
+                <button id="erase-button" class="button">Clear Highscores</button>
+            </div>
+        </div>
+
+    <!-- This is the game over section -->
+    <section class="all-done">
+        <h1>Game over</h1>
+        <form class="names">
+        <p>Your score is</p>
+        <label id="initials">Type your initials here!</label>
+        <input type="text" name="initials"/>
+        <button id="submit">Submit</button>
+        </form>
 
     </section>
-    <main= class="card"></main>
-
-    
+    <footer class="footer" href>
+        <img src="./assets/images/Eaglespano.JPG" height="200px" width="100%" alt="wide shot of Eagles Stadium">
+    </footer>
 </body>
 <script type="text/javascript" src="assets/JS/script.js"></script>
 </html>

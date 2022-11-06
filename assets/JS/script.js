@@ -61,8 +61,10 @@ var myQuestions = [
 //global var list
 var card = document.querySelector(".card");
 var eaglesHeader = document.querySelector(".eagles-header");
+var myQuestions = document.querySelector(".quiz-container");
 var scores = document.querySelector(".scores"); 
-var timer = document.querySelector(".timer"); 
+var timerCard = document.querySelector(".clock"); 
+var timer = 90;
 
 
 
@@ -73,40 +75,19 @@ var displayQuestions = function(){
     document.getElementById("start").style.display = "none;"
     document.getElementById("quiz-container").style.display = "block";
     }
-
-    
-    //Create event listener to activate start game expression
-    document.getElementById("start").addEventListener("click", startGame);
-    console.log("start")
     
     //create start game expression that intiates timer and question functions
     var startGame = function (){ displayQuestions, startTimer
         console.log("game has started")
     }
+    
+    //Create event listener to activate start game expression
+    document.getElementById("start").addEventListener("click", startGame);
+    console.log("start")
+    
 
 //create function for a timer
-function startTimer(duration, display){
-    var timer = duration, minutes, seconds;
-    setInterval(function () {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
 
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = minutes + ":" + seconds;
-
-        if (--timer < 0) {
-            timer = duration;
-        }
-    }, 1000);
-}
-
-window.onload = function(){
-    var fiveMinutes = 60 * 5,
-        display = document.querySelector('#time');
-    startTimer(fiveMinutes, display);
-};
 
 
     
