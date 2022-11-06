@@ -6,8 +6,22 @@
 }
 
 
-.head {
-   
+header {
+    display: flex;
+    /* align-items:flex-start; */
+    justify-content: space-between;
+    /* font-size: 30px; */
+}
+
+#clock {
+    display: block;
+    font-size: 30px;
+
+}
+
+#hs-header{
+    /* padding-left: 20px;
+    padding-top: 20px; */
 }
 
 body {
@@ -38,11 +52,6 @@ body {
     border: 3px solid var(black);
 }
 
-#clock {
-    display: block;
-    font-size: 30px;
-
-}
 
 .instructions{
     font-size: 30px;
@@ -58,13 +67,18 @@ body {
     
 }
 
+
 #quiz-container {
     display: none;
     
 }
 
-.hs-card{
-    font-size: 30px;
+.highscores {
+    font-size: 50px;
+}
+
+#hs-actual{
+
 }
 
 .all-done{
