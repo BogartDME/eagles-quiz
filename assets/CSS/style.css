@@ -10,18 +10,28 @@ header {
     display: flex;
     /* align-items:flex-start; */
     justify-content: space-between;
-    /* font-size: 30px; */
+    font-size: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
-#clock {
+#clock-container {
     display: block;
     font-size: 30px;
+    float: left;
 
 }
 
 #hs-header{
-    /* padding-left: 20px;
-    padding-top: 20px; */
+   font-size: 40px; 
+}
+
+.highscores {
+    font-size: 50px;
+}
+
+#hs-actual{
+justify-content: center;
 }
 
 body {
@@ -73,13 +83,6 @@ body {
     
 }
 
-.highscores {
-    font-size: 50px;
-}
-
-#hs-actual{
-
-}
 
 .all-done{
     margin-bottom: 200px;

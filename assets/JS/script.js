@@ -1,3 +1,48 @@
+//global var list
+var card = document.querySelector(".card");
+var eaglesHeader = document.querySelector(".eagles-header");
+var myQuestions = document.querySelector(".quiz-container");
+var scores = document.querySelector(".scores"); 
+// var timerCard = document.querySelector(".clock"); 
+// var timer = 90;
+var timeEl = document.querySelector(".clock");
+var startGame = document.querySelector("#start");
+var timeLeft = 59;
+var timerInterval;
+var penalty;
+
+//hide all the elements that need to be hidden until needed
+questions 
+scoreboard 
+gameover 
+
+
+//create function for a timer
+function startTimer() {
+    timerInterval = setInterval(function() {
+        timeLeft--;
+        timeEl.textContent = timeLeft;
+        if(timeLeft <= 0) { 
+        clearInterval(timerInterval);
+    }
+    }, 1000);
+    
+}
+// create function to show questions
+var displayQuestions = function(){
+    document.getElementById("start").style.display = "none;"
+    document.getElementById("quiz-container").style.display = "block";
+    }
+    
+    //create start game expression that intiates timer and question functions
+    var startGame = function (){ displayQuestions, startTimer
+        console.log("game has started")
+    }
+    
+    //Create event listener to activate start game expression
+    document.getElementById("start").addEventListener("click", startGame);
+    console.log("start")
+    
 //create questions list
 var myQuestions = [
     {
@@ -58,35 +103,11 @@ var myQuestions = [
     }
 ];
 
-//global var list
-var card = document.querySelector(".card");
-var eaglesHeader = document.querySelector(".eagles-header");
-var myQuestions = document.querySelector(".quiz-container");
-var scores = document.querySelector(".scores"); 
-var timerCard = document.querySelector(".clock"); 
-var timer = 90;
 
 
 
 
 
-// create function to show questions
-var displayQuestions = function(){
-    document.getElementById("start").style.display = "none;"
-    document.getElementById("quiz-container").style.display = "block";
-    }
-    
-    //create start game expression that intiates timer and question functions
-    var startGame = function (){ displayQuestions, startTimer
-        console.log("game has started")
-    }
-    
-    //Create event listener to activate start game expression
-    document.getElementById("start").addEventListener("click", startGame);
-    console.log("start")
-    
-
-//create function for a timer
 
 
 
