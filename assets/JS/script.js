@@ -110,7 +110,7 @@ var myQuestions = [
 
 
 
-
+//scoreboard functions
 //create gameover function    
 // var gameOver = function
 //create document highscore function

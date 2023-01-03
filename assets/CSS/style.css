@@ -57,6 +57,12 @@ body {
 .cox-crawling{
     
 }
+
+#start {
+    width: 50px;
+    height: 20px;
+}
+
 .instructions{
     font-size: 40px;
 }
