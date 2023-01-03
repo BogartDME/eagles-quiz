@@ -19,8 +19,8 @@ header {
 #clock-container {
     display: block;
     font-size: 40px;
-    float: left;
-    position: fixed;
+    /* float: left;
+    position: fixed; */
     bottom: 500px;
     left: 5px;
     border: 5px solid var(--black);
@@ -41,6 +41,12 @@ header {
 
 #hs-container{
 justify-content: center;
+}
+
+.answers{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 body {
@@ -69,21 +75,22 @@ body {
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: var(--green); /* Black w/ opacity */
   }
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #fefefe;
+    background-color: var(--grey);
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid var(--green);
     width: 80%; /* Could be more or less, depending on screen size */
+    font-size: 25px;
   }
   
   /* The Close Button */
   .close {
-    color: #aaa;
+    color: var(--green);
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -101,9 +108,6 @@ body {
     height: 20px;
 }
 
-.instructions{
-    font-size: 40px;
-}
 
 .scores {
     font-size: 32px;
@@ -115,10 +119,6 @@ body {
     border: 3px solid var(black);
 }
 
-
-.instructions{
-    font-size: 30px;
-}
 
 
 .start {

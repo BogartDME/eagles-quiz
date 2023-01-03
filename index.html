@@ -19,20 +19,31 @@
         <div class="tenor-gif-embed" data-postid="10991874" data-share-method="host" data-aspect-ratio="1.78947" data-width="100%"><a href="https://tenor.com/view/nfl-superbowl-reactions-lombardi-championship-trophy-gif-10991874">Nfl Superbowl GIF</a>from <a href="https://tenor.com/search/nfl-gifs">Nfl GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js" alt="Nick Foles holding up the superbowl trophy at superbowl 52"></script>
         <iframe src='https://gfycat.com/ifr/FreshFineAmericantoad' alt="Miracle at the meadowlands- the eagles' defense caused a fumble with mere seconds to go and ran the ball back for a touchdown to beat the giants in giants' stadium" frameborder='0' scrolling='no' allowfullscreen width='450px' height='350px'></iframe>
     </header>
-    
+    <div class="answers">
+        <h1>Cowboys are jotos</h1>
+        <button id="A" onclick="choosing('A')"></button>
+        <button id="B" onclick="choosing('B')"></button>
+        <button id="C" onclick="choosing('C')"></button>
+        <button id="D" onclick="choosing('D')"></button>
+    </div>
     <!-- This is the introduction -->
     <section>
         <h1 class= "eagles-header">How well do you know the <br>Philadelphia Eagles? <br>Let's find out!!</h1>
         <img class="cox-crawl" src="./assets/images/cox.JPG" height="200px" length="400px" alt="Cox crawling and doing finger guns after sacking the opposing qb">
         <button id="myBtn">Open Modal</button>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+<!-- Instructions Modal -->
+<div id="instructions-modal" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal-content">
+  <!-- Modal Content -->
+  <div class="instructions-content">
     <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
+    <p>Welcome to my Eagles quiz!<br>
+        If you are a Cowboys fan you must be lost, please find your way back to 30 years of irrelevance :)<br>
+        click the start quiz button to get started!<br>
+        you will have one minute to finish the quiz, any wrong answers will subtract 5 seconds for your timer<br>
+        Good luck!
+    </p>
   </div>
 
 </div>
@@ -43,12 +54,6 @@
     <aside id="clock-container">
         <p id="clock">time: 60s</p>
     </aside>
-
-    <!-- This houses my questions -->
-    <section id="quiz-container">
-        <h1 id="question"></h1>
-        <div id="choices"></div>
-    </section>
 
     <!-- This is the link for highscores -->
     <div id= "hs-container">
