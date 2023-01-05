@@ -1,7 +1,6 @@
 //global var list
 
 var eaglesHeader = document.querySelector(".eagles-header");
-var myQuestions = document.querySelector("#quiz-container");
 var scores = document.querySelector("#hs-container"); 
 var timeEl = document.querySelector("#clock");
 var startGame = document.querySelector("#start");
@@ -17,6 +16,7 @@ var choice3 = document.getElementById("C");
 var choice4 = document.getElementById("D"); 
 var initiateQuiz = myQuestions.length-1; 
 
+
 //create function for a timer
 function startTimer() {
     timerInterval = setInterval(function() {
@@ -30,7 +30,7 @@ function startTimer() {
     
 }
     
-function questions(){
+function quizQuestions(){
     let nextQuestion = myQuestions[currentQuestion];
         question.innerHTML = nextQuestion.question;
         choice1.innerHTML = nextQuestion.choice1;
@@ -38,6 +38,12 @@ function questions(){
         choice3.innerHTML = nextQuestion.choice3;
         choice4.innerHTML = nextQuestion.choice4;
 }
+startGame.addEventListener("click", function(){
+    timeLeft= 60;
+    myQuestions = 0;
+    startTimer();
+    quizQuestions();
+});
 
 function gradingQuestions(gradeQuestion) {
     penalty = timeLeft -5;
@@ -129,12 +135,6 @@ function displayScoreBoard(){
     document.querySelector("#hs-header").innerHTML = string
 };
 
-startGame.addEventListener("click", function(){
-    timeLeft= 60;
-    myQuestions = 0;
-    startTimer();
-    questions();
-});
 
 
 
@@ -142,10 +142,10 @@ startGame.addEventListener("click", function(){
 
 
 // Get the modal
-var modal = document.getElementById("myModal");
-
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById("modalBtn");
+
+var modal = document.getElementById("instructions-modal");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
