@@ -1,4 +1,51 @@
 //global var list
+var myQuestions = [
+    
+        
+            { 
+                question: "What is Brian Dawkins' number?",
+                choice1:"7", 
+                choice2:"20",
+                choice3:"24",
+                choice4:"30",
+                correct: "B", //or false
+
+            },
+    
+            {
+            
+            
+                question: "How many Superbowl appearances have the Eagles had?",
+                choice1:"4", 
+                choice2:"1",
+                choice3:"2",
+                choice4:"3",
+                correct: "D" //or false
+
+            },
+
+            {
+            
+                question: "Which quarterback has tied the league record for most touchdown passes in one game?",
+                choice1:"Donavan McNabb", 
+                choice2:"Ron Jawarsky",
+                choice3:"Nick Foles",
+                choice:"Randall Cunningham",
+                correct: "C" //or false
+
+            },
+    
+            {
+        
+                question: "Which comic book characters have been tied to the Eagles in the last 15 years?",
+                choice1:"Batman", 
+                choice4: "Batman and Wolverine",
+                choice2:"Punisher",
+                choice3:"Wolverine",
+                correct: "B" //or false
+
+            }
+];
 
 var eaglesHeader = document.querySelector(".eagles-header");
 var scores = document.querySelector("#hs-container"); 
@@ -64,53 +111,6 @@ function gradingQuestions(gradeQuestion) {
 
     
 //create questions list
-var myQuestions = [
-    
-        
-            { 
-                question: "What is Brian Dawkins' number?",
-                choice1:"7", 
-                choice2:"20",
-                choice3:"24",
-                choice4:"30",
-                correct: "B", //or false
-
-            },
-    
-            {
-            
-            
-                question: "How many Superbowl appearances have the Eagles had?",
-                choice1:"4", 
-                choice2:"1",
-                choice3:"2",
-                choice4:"3",
-                correct: "D" //or false
-
-            },
-
-            {
-            
-                question: "Which quarterback has tied the league record for most touchdown passes in one game?",
-                choice1:"Donavan McNabb", 
-                choice2:"Ron Jawarsky",
-                choice3:"Nick Foles",
-                choice:"Randall Cunningham",
-                correct: "C" //or false
-
-            },
-    
-            {
-        
-                question: "Which comic book characters have been tied to the Eagles in the last 15 years?",
-                choice1:"Batman", 
-                choice4: "Batman and Wolverine",
-                choice2:"Punisher",
-                choice3:"Wolverine",
-                correct: "B" //or false
-
-            }
-];
 
 let topScores = JSON.parse(localStorage.getItem("player&score")) || [];
 
