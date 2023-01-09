@@ -56,8 +56,17 @@ body {
     color: var(--green);
 }
 
+header{
+    display: flex;
+}
+
 .eagles-header{
     font-size: 40px;
+}
+    
+.display-scores{
+        font-size: 20px;
+        
 }
 
 .cox-crawling{
