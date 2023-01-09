@@ -19,8 +19,8 @@ header {
 #clock-container {
     display: block;
     font-size: 40px;
-    /* float: left;
-    position: fixed; */
+    float: left;
+    position: fixed;
     bottom: 500px;
     left: 5px;
     border: 5px solid var(--black);
@@ -29,7 +29,10 @@ header {
     width: 300px;
     height: 150px;
     justify-content: center;
+    
 }
+
+
 
 #hs-header{
     font-size: 40px; 
@@ -56,16 +59,14 @@ body {
     color: var(--green);
 }
 
-header{
-    display: flex;
-}
-
 .eagles-header{
     font-size: 40px;
 }
     
 .display-scores{
-        font-size: 20px;
+        font-size: 30px;
+        list-style: none;
+        
         
 }
 

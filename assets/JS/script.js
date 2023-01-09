@@ -30,18 +30,18 @@ var myQuestions = [
                 choice1:"Donavan McNabb", 
                 choice2:"Ron Jawarsky",
                 choice3:"Nick Foles",
-                choice:"Randall Cunningham",
+                choice4:"Randall Cunningham",
                 correct: "C" //or false
 
             },
     
             {
         
-                question: "Which comic book characters have been tied to the Eagles in the last 15 years?",
-                choice1:"Batman", 
-                choice4: "Batman and Wolverine",
-                choice2:"Punisher",
-                choice3:"Wolverine",
+                question: "Which comic book character has been tied to the Eagles in the last 15 years?",
+                choice1: "THe Flash", 
+                choice2: "The Hulk",
+                choice3:"Punisher",
+                choice4:"Wolverine",
                 correct: "B" //or false
 
             }
@@ -93,7 +93,7 @@ startGame.addEventListener("click", function(){
 });
 
 function gradingQuestions(gradeQuestion) {
-    penalty = timeLeft -5;
+    penalty = timeLeft -10;
     if (gradeQuestion == myQuestions[currentQuestion].correct){
         currentQuestion++
         if (initiateQuiz >= currentQuestion) {
@@ -137,7 +137,7 @@ var endQuiz = function(){
 function displayScoreBoard(){
     let string = ""
     for( let i = 0; i<topScores.length; i++){
-        string += `<li> ${topScores[i].name} ${topScores[i].timer}<li>`
+        string += `<li> ${topScores[i].name} ${topScores[i].timer}</li>`
     }
     document.querySelector(".display-scores").innerHTML = string
 };
